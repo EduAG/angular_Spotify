@@ -1,0 +1,34 @@
+HELP:
+To kill the port: netstat -ano | findstr :4200, taskkill /PID <PID> /F
+These comand is for create a plane module: ng g m shared/shared --flat
+
+to start the app in different port : ng --port = 4100
+to start the app ina local network use : ng s --host = 0.0.0.0 -- port = 4200
+
+assests: import all the static resources necessary. Font, Style, Icons, etc.
+dataset: Data dummies
+brand color: Establish color variables. Fonts, Borders, Colors, etc.
+scaffolding: is the process of generating a generic application with features that are common to most modern applications. It can help you start a project quickly so you can focus on building the business logic for your project.
+        -> Structure of archive to work better. 
+Design Logic: - Auth - Home - Tracks - History - Favorites
+Modules: Angular applications are modular and Angular has its own modularity system called NgModules. 
+NgModules:  is a fundamental building block that organizes an application into cohesive blocks of functionality. Each NgModule serves as a container for a related set of Angular components, services, directives, and pipes, and helps structure the app into distinct and reusable units.
+
+Route ( app-routing.module ... -> https://)
+  |
+  Componen (Contain: .cdd, .html, .ts, spect.ts)
+    
+
+modules: -routes - components - services - pipes - ...
+            - tracks - history - favorites
+
+ng g m modules/Auth --routing : these command create the module of Auth and the section of --routing specify that these module with manipulation of routes
+
+Routes: 
+    -> LazyLoading, optimization app By default.
+    NgModules are eagerly loaded. 
+    This means that as soon as the application loads, so do all the NgModules, whether they are immediately necessary or not. 
+    For large applications with lots of routes, consider lazy loading —a design pattern that loads NgModules as needed. 
+    Lazy loading helps keep initial bundle sizes smaller, which in turn helps decrease load times.
+
+Alias --- Path: This can hel to give a short name. @core, @modules...
